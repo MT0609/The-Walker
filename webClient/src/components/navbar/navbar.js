@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-import { loadUser, signOut } from "../actions/authAction";
-import userApi from "../api/userApi";
+import { loadUser, signOut } from "../../actions/authAction";
+import userApi from "../../api/userApi";
 import "./navbar.scss";
-import UserMenu from "./user/userMenu";
+import UserMenu from "../user/userMenu";
 
 function Navbar() {
   let dispatch = useDispatch();
@@ -21,7 +21,7 @@ function Navbar() {
     }
     getUserInfo();
   }, []);
-    
+
   let user = useSelector((state) => state.auth);
 
   const logOut = () => {
@@ -36,7 +36,7 @@ function Navbar() {
       <Link to="/">
         <img
           className="nav__logo"
-          src={require("../img/logo.png")}
+          src={require("../../img/logo.png")}
           alt="Home"
         />
       </Link>

@@ -50,7 +50,7 @@ function Login() {
     }
 
     try {
-      let res = await userApi.post({ email, password });
+      let res = await userApi.signIn({ email, password });
       if (res.msg === "Auth failed!") {
         setLoginErr("Email or Password is not correct");
       }

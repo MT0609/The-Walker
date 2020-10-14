@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './notFound.scss'
+import "./notFound.scss";
 
 function NotFound() {
   return (
@@ -11,7 +11,7 @@ function NotFound() {
         <button className="notfound__homeBtn">GO TO HOME</button>
       </Link>
     </div>
-  )
+  );
 }
 
 export default NotFound;

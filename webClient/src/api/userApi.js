@@ -9,7 +9,7 @@ const userApi = {
     const url = "/users/information";
     return axiosClient.get(url);
   },
-  post: (body) => {
+  signIn: (body) => {
     const url = "/users/login";
     return axiosClient.post(url, body);
   },

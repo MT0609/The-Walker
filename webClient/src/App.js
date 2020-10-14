@@ -8,18 +8,19 @@ import {
   Redirect,
 } from "react-router-dom";
 
+import Navbar from "./components/navbar/navbar";
+import Home from "./components/home/home";
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
-import Home from "./components/home";
 import Blog from "./components/blog/blogsite";
 import blogDetail from "./components/blog/blogDetail";
-import Navbar from "./components/navbar";
 import Users from "./components/admin/users";
 import Items from "./components/shop/items";
 import Item from "./components/shop/item";
 import Admin from "./components/admin/admin";
 import PrivateRoute from "./routes/privateRoute";
 import Loading from "./components/loading/loading";
+import NotFound from "./components/notFound/notFound";
 
 const UserInfo = React.lazy(() => import("./components/user/info"));
 const BlogCreate = React.lazy(() => import("./components/blog/blogCreate"));
@@ -30,7 +31,6 @@ const ForgotPassword = React.lazy(() =>
 const ForgotConfirm = React.lazy(() =>
   import("./components/auth/forgotConfirm")
 );
-const NotFound = React.lazy(() => import("./components/notFound"));
 
 function App() {
   return (

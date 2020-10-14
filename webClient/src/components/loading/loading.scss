@@ -1,5 +1,8 @@
 .loading {
-  padding-top: 20rem;
+  margin-top: 20rem;
+  padding: 2rem;
+  background-color: rgba($color: #ffffff, $alpha: 0.6);
+  border-radius: 10px;
   &__title {
     margin-left: 1rem;
     font-size: 2rem;
